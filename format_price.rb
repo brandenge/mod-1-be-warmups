@@ -1,7 +1,7 @@
 require 'rspec'
 
 def format_price(price)
-  "$%05.2f" % price.delete('$')
+  '$%05.2f' % price.delete('$')
 end
 
 RSpec.describe 'format_price, which formats prices in $##.## format' do
